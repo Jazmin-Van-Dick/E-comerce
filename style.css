@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', serif;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 30%;
+    min-width: 300px;
+}
+.col-2 img{
+   max-width: 100%;
+   padding: 50px 0;
+   filter: drop-shadow(11px 11px 11px #b4b4b4);
+   
+}
+
+.col-2 h1{
+    font-size: 40px;
+    line-height: 60px;
+    margin: 25px 0;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+.col-2 p{
+    font-size: 14px;
+    font-family: 'Poppins', serif;
+}
+
+.btn{
+    display: inline-block;
+    background: #e47c7c;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+    font-family: 'Poppins', serif;
+}
+
+.btn:hover{
+    background: #c45858;
+    transform: translateY(-3px);
+    filter: drop-shadow(3px 3px 3px#555);
+}
+
+
+.circle1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(600px at right 800px) hidden;
+    z-index: -1;
+    background: #dfdfdf hidden;
+}
+
+.circle2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fcd8d8 hidden;
+    clip-path: circle(600px at left) hidden;
+    z-index: -1;
+}
